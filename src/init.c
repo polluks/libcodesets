@@ -138,21 +138,21 @@ struct loc
 
 // table with the default LANGUAGE<>CHARSET mapping we
 // are using in codesets.library.
-// the IOS3166 codes have been taken from http://de.wikipedia.org/wiki/ISO-3166-1-Kodierliste
+// the ISO3166 codes have been taken from http://de.wikipedia.org/wiki/ISO-3166-1-Kodierliste
 static const struct loc locs[] =
 {
   { "bosanski",     8,  "ISO-8859-2",        MAKE_ID('B', 'A', 0, 0),   MAKE_ID('B', 'I', 'H', 0) },
-  { "català",       6,  "ISO-8859-1 + Euro", MAKE_ID('E', 0, 0, 0),     MAKE_ID('E', 'S', 'P', 0) }, // same as spanish
+  { "catalÃ ",       6,  "ISO-8859-1 + Euro", MAKE_ID('E', 0, 0, 0),     MAKE_ID('E', 'S', 'P', 0) }, // same as spanish
   { "czech",        5,  "ISO-8859-2",        MAKE_ID('C', 'Z', 0, 0),   MAKE_ID('C', 'Z', 'E', 0) },
   { "dansk",        5,  "ISO-8859-1 + Euro", MAKE_ID('D', 'K', 0, 0),   MAKE_ID('D', 'N', 'K', 0) },
   { "deutsch",      7,  "ISO-8859-1 + Euro", MAKE_ID('D', 0, 0, 0),     MAKE_ID('D', 'E', 'U', 0) },
   { "english",      7,  "ISO-8859-1 + Euro", MAKE_ID('G', 'B', 0, 0),   MAKE_ID('G', 'B', 'R', 0) },
   { "esperanto",    9,  "ISO-8859-3",        MAKE_ID(0, 0, 0, 0),       MAKE_ID(0, 0, 0, 0)       },
   { "eesti",        5,  "ISO-8859-15",       MAKE_ID('E', 'E', 0, 0),   MAKE_ID('E', 'S', 'T', 0) },
-  { "èe¹tina",      7,  "ISO-8859-2",        MAKE_ID('C', 'Z', 0, 0),   MAKE_ID('C', 'Z', 'E', 0) }, // czech in MorphOS 2.0
-  { "español",      7,  "ISO-8859-1 + Euro", MAKE_ID('E', 0, 0, 0),     MAKE_ID('E', 'S', 'P', 0) },
-  { "français",     8,  "ISO-8859-1 + Euro", MAKE_ID('F', 0, 0, 0),     MAKE_ID('F', 'R', 'A', 0) },
-  { "gaeilge",      7,  "ISO-8859-15",       MAKE_ID(0, 0, 0, 0),       MAKE_ID(0, 0, 0, 0)       },
+  { "Ã¨eÂ¹tina",      7,  "ISO-8859-2",        MAKE_ID('C', 'Z', 0, 0),   MAKE_ID('C', 'Z', 'E', 0) }, // czech in MorphOS 2.0
+  { "espaÃ±ol",      7,  "ISO-8859-1 + Euro", MAKE_ID('E', 0, 0, 0),     MAKE_ID('E', 'S', 'P', 0) },
+  { "franÃ§ais",     8,  "ISO-8859-1 + Euro", MAKE_ID('F', 0, 0, 0),     MAKE_ID('F', 'R', 'A', 0) },
+  { "gaeilge",      7,  "ISO-8859-15",       MAKE_ID('I', 'R', 'L', 0), MAKE_ID('I', 'R', 'L', 0) },
   { "galego",       6,  "ISO-8859-1 + Euro", MAKE_ID('E', 0, 0, 0),     MAKE_ID('E', 'S', 'P', 0) }, // same as spanish
   { "greek",        5,  "ISO-8859-7",        MAKE_ID('G', 'R', 0, 0),   MAKE_ID('G', 'R', 'C', 0) },
   { "hrvatski",     8,  "ISO-8859-2",        MAKE_ID('H', 'R', 0, 0),   MAKE_ID('H', 'R', 'V', 0) },
@@ -162,14 +162,14 @@ static const struct loc locs[] =
   { "nederlands",  10,  "ISO-8859-1 + Euro", MAKE_ID('N', 'L', 0, 0),   MAKE_ID('N', 'L', 'D', 0) },
   { "norsk",        5,  "ISO-8859-1 + Euro", MAKE_ID('N', 0, 0, 0),     MAKE_ID('N', 'O', 'R', 0) },
   { "polski",       6,  "ISO-8859-2",        MAKE_ID('P', 'L', 0, 0),   MAKE_ID('P', 'O', 'L', 0) },
-  { "português",    9,  "ISO-8859-1 + Euro", MAKE_ID('P', 'T', 0, 0),   MAKE_ID('P', 'R', 'T', 0) },
+  { "portuguÃªs",    9,  "ISO-8859-1 + Euro", MAKE_ID('P', 'T', 0, 0),   MAKE_ID('P', 'R', 'T', 0) },
   { "russian",      7,  "Amiga-1251",        MAKE_ID('R', 'U', 0, 0),   MAKE_ID('R', 'U', 'S', 0) },
   { "slovak",       6,  "ISO-8859-2",        MAKE_ID('S', 'K', 0, 0),   MAKE_ID('S', 'V', 'K', 0) },
   { "slovensko",    9,  "ISO-8859-2",        MAKE_ID('S', 'I', 0, 0),   MAKE_ID('S', 'V', 'N', 0) },
   { "srpski",       6,  "ISO-8859-2",        MAKE_ID('R', 'S', 0, 0),   MAKE_ID('S', 'R', 'B', 0) },
   { "suomi",        5,  "ISO-8859-1",        MAKE_ID('F', 'I', 'N', 0), MAKE_ID('F', 'I', 'N', 0) },
   { "svenska",      7,  "ISO-8859-1 + Euro", MAKE_ID('S', 0, 0, 0),     MAKE_ID('S', 'W', 'E', 0) },
-  { "türkçe",       6,  "ISO-8859-9",        MAKE_ID('T', 'R', 0, 0),   MAKE_ID('T', 'U', 'R', 0) },
+  { "tÃ¼rkÃ§e",       6,  "ISO-8859-9",        MAKE_ID('T', 'R', 0, 0),   MAKE_ID('T', 'U', 'R', 0) },
   { NULL,           0,  NULL,                MAKE_ID(0, 0, 0, 0),       MAKE_ID(0, 0, 0, 0)       }
 };
 
